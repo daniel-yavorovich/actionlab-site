@@ -23,6 +23,11 @@
     <script src="js/scrolloverflow.js"></script>
     <script src="js/jquery.fullPage.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- fotorama.css & fotorama.js. -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
 </head>
 <body>
 <nav class="navbar navbar-default" role="navigation" id="menu">
@@ -53,7 +58,10 @@
                     <a href="#section3">Біографія</a>
                 </li>
                 <li data-menuanchor="section4">
-                    <a href="#section4">Зворотній зв'язок</a>
+                    <a href="#section4">Галерея</a>
+                </li>
+                <li data-menuanchor="section5">
+                    <a href="#section5">Зворотній зв'язок</a>
                 </li>
             </ul>
         </div>
@@ -69,8 +77,7 @@
             <div class='col-sm-2'></div>
             <div class='col-sm-8'>
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe src="https://www.youtube.com/embed/NoSIZIIFOxs"
-                            allowfullscreen></iframe>
+                    <div id="player"></div>
                 </div>
                 <hr>
             </div>
@@ -108,7 +115,8 @@
                             отблагодарить
                             вас мы
                             делаем
-                            для вас Бенефис в Худпромлофте где вас ждет фуршет, музыкальная программа от Харьковских муз
+                            для вас Бенефис в Худпромлофте где вас ждет фуршет, музыкальная программа от Харьковских
+                            музыкальных
                             коллективов а
                             так
                             же тайный перформанс от Лабаратории Ненаправленных Действий. По продолжительности проекта мы
@@ -398,59 +406,87 @@
 
     <div class="section" data-anchor="section4">
         <div class="container">
-
-            <div class="row">
-                <div class="col-sm-6">
-                    <h4>Хочу на Бенефіс</h4>
-                    <form>
-                        <div class="form-group">
-                            <label class="radio-inline">
-                                <input type="radio" name="isBenefisWant" id="inlineRadio1" value="option1" checked>Так
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="isBenefisWant" id="inlineRadio2" value="option2">Ні
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email адреса</label>
-                            <input type="email" class="form-control" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="firstName">Ім'я</label>
-                            <input type="text" class="form-control" id="firstName">
-                        </div>
-                        <div class="form-group">
-                            <label for="lastName">Призвище</label>
-                            <input type="text" class="form-control" id="lastName">
-                        </div>
-
-                        <button type="submit" class="btn btn-default">Відіслати</button>
-                    </form>
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="fotorama" data-width="100%" data-ratio="800/500">
+                    <img src="img/1.jpg">
+                    <img src="img/2.jpg">
+                    <img src="img/3.jpg">
+                    <img src="img/4.jpg">
+                    <img src="img/5.jpg">
+                    <img src="img/6.jpg">
+                    <img src="img/7.jpg">
+                    <img src="img/8.jpg">
+                    <img src="img/9.jpg">
+                    <img src="img/10.jpg">
+                    <img src="img/11.jpg">
+                    <img src="img/12.jpg">
+                    <img src="img/13.jpg">
+                    <img src="img/14.jpg">
+                    <img src="img/15.jpg">
+                    <img src="img/16.jpg">
                 </div>
-                <div class="col-sm-6">
-                    <p><strong>+38 097 521 6711</strong></p>
-                    <p><strong>skype: sandro.garibashvili</strong></p>
-                    <p><strong>undirectionalaction@gmail.com</strong><br></p>
-                    <p><strong>Пушкинский Вьезд 6, Харьков, Украина, 61024</strong></p>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.4274494192323!2d36.24242831571521!3d50.003342979416175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0dd31c140a9%3A0x6fe70aa7048af270!2z0J_Rg9GI0LrRltC90YHRjNC60LjQuSDQsifRl9C30LQsIDYsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1471614974512"
-                                frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+
+<div class="section" data-anchor="section5">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <h4>Хочу на Бенефіс</h4>
+                <form>
+                    <div class="form-group">
+                        <label class="radio-inline">
+                            <input type="radio" name="isBenefisWant" id="inlineRadio1" value="option1" checked>Так
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="isBenefisWant" id="inlineRadio2" value="option2">Ні
+                        </label>
                     </div>
-                    <div id="socialIcons" class="text-center">
-                        <a href="https://www.facebook.com/groups/UndirectionalAction/" target="_blank">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                        </a>
-                        <a href="mailto:undirectionalaction@gmail.com" target="_blank">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCrVsI1Q0zazbhYv_JvFXGcg" target="_blank">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                        </a>
+                    <div class="form-group">
+                        <label for="email">Email адреса</label>
+                        <input type="email" class="form-control" id="email" required>
                     </div>
+                    <div class="form-group">
+                        <label for="firstName">Ім'я</label>
+                        <input type="text" class="form-control" id="firstName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Призвище</label>
+                        <input type="text" class="form-control" id="lastName">
+                    </div>
+
+                    <button type="submit" class="btn btn-default">Відіслати</button>
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <p><strong>+38 097 521 6711</strong></p>
+                <p><strong>skype: sandro.garibashvili</strong></p>
+                <p><strong>undirectionalaction@gmail.com</strong><br></p>
+                <p><strong>Пушкинский Вьезд 6, Харьков, Украина, 61024</strong></p>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.4274494192323!2d36.24242831571521!3d50.003342979416175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0dd31c140a9%3A0x6fe70aa7048af270!2z0J_Rg9GI0LrRltC90YHRjNC60LjQuSDQsifRl9C30LQsIDYsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1471614974512"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div id="socialIcons" class="text-center">
+                    <a href="https://www.facebook.com/groups/UndirectionalAction/" target="_blank">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="mailto:undirectionalaction@gmail.com" target="_blank">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCrVsI1Q0zazbhYv_JvFXGcg" target="_blank">
+                        <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>
