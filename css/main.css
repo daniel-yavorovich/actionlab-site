@@ -75,3 +75,17 @@ body {
     background-color: white;
 
 }
+
+#socialIcons {
+    margin-top: 1em;
+    font-size: 3rem;
+}
+
+#socialIcons i {
+    text-indent: 1em;
+}
+
+#socialIcons a {
+    color: black;
+    text-decoration: none;
+}
