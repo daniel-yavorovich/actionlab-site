@@ -1,0 +1,77 @@
+body {
+        color: #444;
+}
+
+/* responsive text queries */
+@media screen and (max-width: 992px) {
+    p, .btn, input, div, span, h4 {
+        font-size: 100%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    p, .btn, input, div, span, h4 {
+        font-size: 95%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 53px;
+    z-index: 70;
+    width: 100%;
+    background-color: white;
+}
+
+#menu li a {
+    color: black;
+}
+
+#menu .active a,
+#menu .active a:hover {
+    background-color: #c2c2c2;
+}
+
+#videothumbnail {
+    height: 50%;
+    width: 50%;
+}
+
+.navbar-nav {
+    background-color: white;
+
+}
