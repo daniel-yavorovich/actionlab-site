@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Actionlab</title>
+
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrolloverflow.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- fotorama.css & fotorama.js. -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation" id="menu">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">ActionLab</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li data-menuanchor="section0" class="active">
+                    <a href="#section0">Main</a>
+                </li>
+                <li data-menuanchor="section1">
+                    <a href="#section1">Donate</a>
+                </li>
+                <li data-menuanchor="section2">
+                    <a href="#section2">Info</a>
+                </li>
+                <li data-menuanchor="section3">
+                    <a href="#section3">The Team</a>
+                </li>
+                <li data-menuanchor="section4">
+                    <a href="#section4">Gallery</a>
+                </li>
+                <li data-menuanchor="section5">
+                    <a href="#section5">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="fullpage">
+    <div class="section" data-anchor="section0">
+        <h1 class="text-center">Laboratory of Undirectional Movement</h1>
+        <h2 class="text-center">ШКОЛА ПЕРФОРМАНСА В ХАРЬКОВЕ</h2>
+
+        <div class='row'>
+            <div class='col-sm-2'></div>
+            <div class='col-sm-8'>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <div id="player"></div>
+                </div>
+                <hr>
+            </div>
+            <div class='col-sm-2'></div>
+        </div>
+    </div>
+
+    <div class="section" data-anchor="section1">
+        <h3 class="text-center">Donate</h3>
+
+        <div class="row" style="margin-top: 5em">
+            <div class="container">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 text-center">
+                    <div class="btn-group">
+                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                            <input type="hidden" name="cmd" value="_s-xclick">
+                            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+                            <input type="image" src="https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_donateCC_LG.gif"
+                                   border="0" name="submit"
+                                   alt="PayPal — более безопасный и легкий способ оплаты через Интернет!">
+                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                                 height="1">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 5em">
+            <div class="container">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+                    <div class="btn-group">
+                        <h4>How can we thank you?</h4>
+                        <p>
+                            Your donation goes towards supporting the evolution of Contemporary Performance Art not only
+                            in Kharkiv but in all of Ukraine. To thank our Donors we are throwing a Benefit here in
+                            Kharkiv! We invite you to hear the city’s redhot musical collectives eat and drink with us
+                            as well as take in a special secret Performance by ActionLab! For donors from other
+                            countries we are more then happy to repay you with our products. We have prints, art objects
+                            and other fancy fair. Please let us know your interest and we will get back to you! Besides
+                            we are also planning to create a documentary, which follows the progress of the students and
+                            their work. With monthly updates, you will be able to see the process from the inside. At
+                            the end we will organize a showcase for the work we have created. And just as a bonus free
+                            entrance to any show by Actionlab for the next 9 years.
+                        </p>
+                        <p>
+                            Please RSVP for the Benefit by emailing us below.
+                        </p>
+                        <p>
+                            A heart felt thanks to all of you!
+                        </p>
+                    </div>
+                    <hr>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="section" data-anchor="section2">
+        <div class="row">
+            <div class="container">
+                <h2>Goal</h2>
+                <h3>
+                    The organization of a special course “Performance Art’ on the base of the new faculty of Visual Arts
+                    at the Kharkiv State Academy of Art and Design.
+                </h3>
+
+                <h4>The Problem</h4>
+
+                <p>
+                    The idea of the necessity of Contemporary Performance Arts education in Ukraine is gaining ground,
+                    although still within the format of short courses or weekend workshops. The victims are young
+                    students who do not have the opportunity to gain knowledge in this sphere at the places where they
+                    study. The internet gives a chance to get acquainted with the <strong>language</strong> of
+                    Contemporary Art, however
+                    visual artists need the practice of this language under the guidance of those who have the
+                    experience in order to grow professionally.
+
+                </p>
+                <p>
+                    In order to organize this course we need, space, official status and a team of likeminded
+                    individuals.
+                </p>
+
+                <h4>Meta</h4>
+
+                <p>
+                    We are ready to give students the possibility to gain the knowledge in the sphere of Contemporary
+                    Performance on an ongoing basis. We have approached – Hudprom Loft, the first open art platform
+                    located inside the Kharkov State Academy of Art and Design in order to use their space for the open
+                    class part of the program. They also have the status, as they are currently opening a new Department
+                    of Contemporary Visual Art, where young artists can study. And they have the faculty – Sandro
+                    Garibashvili and Konstantin Zorkin performers and more from ‘The Laboratory of Undirectional Action’
+                    which are ready to share their knowledge and experience.
+                </p>
+
+                <h4>Hudprom Loft and the new Department of Visual Arts</h4>
+
+                <p>
+                    The place – a dream that shifts reality. We owe the existence of the open space in the underground
+                    of the Academy of Art and Design to the founders of the Department of Visual Arts; Daria …. and
+                    Dennis
+                    Thanks to their effort Contemporary Art is gaining a new status and simultaneously creating a new
+                    youth movement.
+                </p>
+
+                <p>
+                    The Department begins it’s work on the first of September. And the Art of Contemporary Performance
+                    process will begin in October as a theoretical and practical 3 month course.
+                </p>
+
+                <h4>Laboratory of Undirectional Movement</h4>
+
+                <p>
+                    Action lab is a unique project, that was born in Kharkiv, Ukraine three years ago. The authors of
+                    this project are united in their live search of new forms of action and performance. Our
+                    performances have been seen by an audience of thousands in Kharkiv, Kiev, Lithuania and Poland. We
+                    have produced more then 10 live works up to date including, installations, video-art, and massive
+                    carnivalesque performances.
+                </p>
+
+                <p>
+                    Actonlab is apolitical in the nature of it’s work. We are focused on a quest of mystical energy
+                    which is encrypted inside ritual and mythology. Our goal is to create an experience which translates
+                    this energy to our audience. The first step in our new journey will be an educational project ‘The
+                    Art of Performance,’ in the frame of which we plan to integrate the ‘new’ language of performance
+                    into the educational process of young Ukranian artists.
+                </p>
+
+                <h4>Plans</h4>
+
+                <p>
+                    We have the intention of creating an experimental course, our goal is to develop new original works
+                    by the end of the course, as well as document the process of our course on video. All video and
+                    photo materials will be posted on a web-sight designed specifically to illuminate the development of
+                    Performance Art in Kharkiv and eastern Ukraine. We feel that such a resource could become a valuable
+                    channel for the future of Performance Art in Ukraine.
+                </p>
+
+                <p>
+                    The course itself consists of three parts: Body and movement, Object and it’s functionality, Sound
+                    in performance. Each direction is led by a performer of the group with relevant experience. Body and
+                    movement is lead by Sandro Garibashvili, graduate of the International School of Performance Art,
+                    London UK.
+                </p>
+
+                <p>
+                    The new course of Performance art is free for students of the Academy, however we invite anyone who
+                    wants to explore this territory, develop new art-forms and showcase them, along for the ride. The
+                    course fee is 2000 Hryvnias
+                </p>
+
+                <h4>How the money will be used</h4>
+
+                <p>
+                    To finance this course on a professional level we need your help.
+                </p>
+
+                <p>
+                    Since the course is not being financed by the Academy, we can not equip the studio and prepare a
+                    significant part of necessary student materials. As well as issues connected to documentation of
+                    photo, video material and technical support. The donations will go towards establishing and
+                    integrating the course in the cultural and social life of Kharkiv and all of Ukraine. We are opening
+                    the course up not only to students of the Academy but to all those who have an interest in
+                    developing work in this field and share them with our public.
+                </p>
+
+                <p>
+                    We need 50,000 Hryvnias or 2000$
+                </p>
+
+                <ul>
+                    <li>Studio rental and Equipment – 15,000</li>
+                    <li>Materials for students – 5000</li>
+                    <li>Transportation and use of additional locations 5000</li>
+                    <li>Invitation of Guest Teachers – 5000</li>
+                    <li>Video and Photo Documentation 10000</li>
+                    <li>Web development and support 10000</li>
+                </ul>
+
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" data-anchor="section3">
+        <div class="row">
+            <div class="container">
+                <h2>The Team</h2>
+
+                <h4>Zorkin Konstantin</h4>
+
+                <p>
+                    Artist, performer, scenographer, graduated from Kharkiv Culture Academy. Took part and developedin
+                    many works and exhibitions in the field of Contemporary Art in Ukraine, Lithuania, Poland. Founder
+                    of the Labaratory of Undirectional Action. Lecturer on the subject of Contemporary
+                    Art in several educational projects.
+                </p>
+
+                <h4>Sandro Garibashvili</h4>
+
+                <p>
+                    Performer, Teacher. Graduated from the London International School of Performing Arts, 2005. Founder
+                    of theater Eleffant Foot, Chicago IL 2006. Participated in many theater projects and festivals in
+                    USA, Canada, Europe, Great Britain. Founder of ‘Kharkiv Comedy Workshop’ 2015 Kharkiv, Ukraine.
+                </p>
+
+                <h4>Hudpromloft</h4>
+
+                <p>
+                    A laboratory of research and synthesis between different Artists and creative directions. Modern,
+                    democratic, open space for the development of new works of Art. Encompassing: art objects, media
+                    installation, contemporary art and performance.
+                </p>
+
+                <p>
+                    The creation of Hudpromloft a new Department of Contemporary Visual Arts inside the structure of the
+                    Kharkiv Academy of Art and Design, answers an important call, a call for the meeting of traditional
+                    and contemporary art, a space for an open dialogue between different spheres of Art.
+                </p>
+
+                <p>
+                    A birth of a free space inside the modern educational system.
+                </p>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" data-anchor="section4">
+        <div class="container">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="fotorama" data-width="100%" data-ratio="800/500">
+                    <img src="img/1.jpg">
+                    <img src="img/2.jpg">
+                    <img src="img/3.jpg">
+                    <img src="img/4.jpg">
+                    <img src="img/5.jpg">
+                    <img src="img/6.jpg">
+                    <img src="img/7.jpg">
+                    <img src="img/8.jpg">
+                    <img src="img/9.jpg">
+                    <img src="img/10.jpg">
+                    <img src="img/11.jpg">
+                    <img src="img/12.jpg">
+                    <img src="img/13.jpg">
+                    <img src="img/14.jpg">
+                    <img src="img/15.jpg">
+                    <img src="img/16.jpg">
+                    <img src="img/17.jpg">
+                    <img src="img/18.jpg">
+                    <img src="img/19.jpg">
+                    <img src="img/20.jpg">
+                    <img src="img/20.jpg">
+                    <img src="img/21.jpg">
+                    <img src="img/22.jpg">
+                    <img src="img/23.jpg">
+                    <img src="img/24.jpg">
+                    <img src="img/25.jpg">
+                    <img src="img/26.jpg">
+                    <img src="img/27.jpg">
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+
+    <div class="section" data-anchor="section5">
+        <div class="container">
+
+            <div class="row">
+                <!--<div class="col-sm-6">-->
+                    <!--<h4>Хочу на Бенефіс</h4>-->
+                    <!--<form>-->
+                        <!--<div class="form-group">-->
+                            <!--<label class="radio-inline">-->
+                                <!--<input type="radio" name="isBenefisWant" id="inlineRadio1" value="option1" checked>Так-->
+                            <!--</label>-->
+                            <!--<label class="radio-inline">-->
+                                <!--<input type="radio" name="isBenefisWant" id="inlineRadio2" value="option2">Ні-->
+                            <!--</label>-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="email">Email адреса</label>-->
+                            <!--<input type="email" class="form-control" id="email" required>-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="firstName">Ім'я</label>-->
+                            <!--<input type="text" class="form-control" id="firstName">-->
+                        <!--</div>-->
+                        <!--<div class="form-group">-->
+                            <!--<label for="lastName">Призвище</label>-->
+                            <!--<input type="text" class="form-control" id="lastName">-->
+                        <!--</div>-->
+
+                        <!--<button type="submit" class="btn btn-default">Відіслати</button>-->
+                    <!--</form>-->
+                <!--</div>-->
+                <!--<div class="col-sm-6">-->
+                <div class="col-sm-12">
+                    <p><strong>+38 097 521 6711</strong></p>
+                    <p><strong>skype: sandro.garibashvili</strong></p>
+                    <p><strong>undirectionalaction@gmail.com</strong><br></p>
+                    <p><strong>Пушкинский Вьезд 6, Харьков, Украина, 61024</strong></p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.4274494192323!2d36.24242831571521!3d50.003342979416175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0dd31c140a9%3A0x6fe70aa7048af270!2z0J_Rg9GI0LrRltC90YHRjNC60LjQuSDQsifRl9C30LQsIDYsINCl0LDRgNC60ZbQsiwg0KXQsNGA0LrRltCy0YHRjNC60LAg0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1471614974512"
+                                frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                    <div id="socialIcons" class="text-center">
+                        <a href="https://www.facebook.com/groups/UndirectionalAction/" target="_blank">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a href="mailto:undirectionalaction@gmail.com" target="_blank">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCrVsI1Q0zazbhYv_JvFXGcg" target="_blank">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
