@@ -89,3 +89,7 @@ body {
     color: black;
     text-decoration: none;
 }
+
+.fotorama img {
+    max-width: 100%;
+}
