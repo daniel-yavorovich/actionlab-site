@@ -7,7 +7,7 @@
 
     <title>Actionlab</title>
 
-    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <!--<link rel="stylesheet" href="css/jquery.fullPage.css">-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -21,7 +21,7 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scrolloverflow.js"></script>
-    <script src="js/jquery.fullPage.js"></script>
+    <!--<script src="js/jquery.fullPage.js"></script>-->
     <script src="js/main.js"></script>
 
     <!-- fotorama.css & fotorama.js. -->
@@ -90,77 +90,74 @@
 <div id="fullpage">
     <div class="section" data-anchor="section0">
         <h1 class="text-center">ЛАБОРАТОРИЯ НЕНАПРАВЛЕННЫХ ДЕЙСТВИЙ</h1>
-        <h2 class="text-center">ШКОЛА ПЕРФОРМАНСА В ХАРЬКОВЕ</h2>
-
-        <div class='row'>
-            <div class='col-sm-2'></div>
-            <div class='col-sm-8'>
-                <div class="embed-responsive embed-responsive-16by9">
-                    <div id="player"></div>
-                </div>
-                <hr>
-            </div>
-            <div class='col-sm-2'></div>
+        <div class="container-fluid">
+          <div class='row'>
+              <div class='col-sm-2'></div>
+              <div class='col-sm-8'>
+                  <div class="embed-responsive embed-responsive-16by9">
+                      <div id="player"></div>
+                  </div>
+                  <hr>
+              </div>
+              <div class='col-sm-2'></div>
+          </div>
         </div>
     </div>
 
     <div class="section" data-anchor="section1">
         <h2 class="text-center">Поддержать Проект</h2>
 
-        <div class="row" style="margin-top: 5em">
-            <div class="container">
-                <div class="col-md-2"></div>
-                <div class="col-md-8 text-center">
-                    <div class="btn-group">
-                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                            <input type="hidden" name="cmd" value="_s-xclick">
-                            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+        <div class="container">
+          <div class="row" style="margin-top: 5em">
+              <div class="col-md-2"></div>
+              <div class="col-md-8 text-center">
+                  <div class="btn-group">
+                      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                          <input type="hidden" name="cmd" value="_s-xclick">
+                          <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
 ">
-                            <input type="image" src="https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_donateCC_LG.gif"
-                                   border="0" name="submit"
-                                   alt="PayPal — более безопасный и легкий способ оплаты через Интернет!">
-                            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
-                                 height="1">
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-2"></div>
-            </div>
+                          <input type="image" src="https://www.paypalobjects.com/ru_RU/RU/i/btn/btn_donateCC_LG.gif"
+                                 border="0" name="submit"
+                                 alt="PayPal — более безопасный и легкий способ оплаты через Интернет!">
+                          <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1"
+                               height="1">
+                      </form>
+                  </div>
+              </div>
+              <div class="col-md-2"></div>
+          </div>
         </div>
 
-        <div class="row" style="margin-top: 5em">
-            <div class="container">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <div class="btn-group">
-                        <p>Так как большая часть нашей деятельности не оплачивается способом платных перформансом, мы нуждаемся в вашей поддержке, вы можете оказать ее здесь вашим благотворительным взносом. </p>
-                    </div>
-                    <hr>
-                </div>
-                <div class="col-md-1"></div>
-            </div>
+        <div class="container">
+          <div class="row" style="margin-top: 5em">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+                  <div class="btn-group">
+                      <p>Так как большая часть нашей деятельности не оплачивается способом платных мероприятий, мы нуждаемся в вашей поддержке. Вы можете оказать ее здесь вашим благотворительным взносом.</p>
+                  </div>
+                  <hr>
+              </div>
+              <div class="col-md-1"></div>
+          </div>
         </div>
-
 
     </div>
 
     <div class="section" data-anchor="section2">
-        <div class="row">
-            <div class="container">
-
+        <div class="container">
+            <div class="row">
                 <h2>Информация</h2>
                 <p>Лаборатория Ненаправленных Действий – это уникальный проект, который существует в городе Харьков уже на протяжение более трех лет. Авторы этого проекту художники и перформеры, которых объединяет поиск новых форм искусства действий (или перформанса). Деятельность «Лаборатории»  находится на поверхности ритуального действия и акций современного искусства.  С начала существования проекту наши акции увидело больше несколько тысяч людей в Харькове, Киеве, Литвы и Польши. В своем арсенале мы имеем больше 10 робот, включая инсталляции, видео-арт и масштабные  костюмированные перформансы.</p>
                 <p>«Лаборатория Ненаправленных Действий»  не имеет политического  подтекста, мы концентрируемся на поиске мистических источников энергии, которые заложены в искусстве на мифологическом уровне. Этот опыт дает нам возможность  распространения нашей деятельности в новом качестве.</p>
 
                 <hr>
-
             </div>
         </div>
     </div>
 
     <div class="section" data-anchor="section3">
-        <div class="row">
-            <div class="container">
+        <div class="container">
+          <div class="row">
 
                 <h4>Константин Зоркин</h4>
                 <p>Константин Зоркин – художник, культуролог, перформер, закончил Харьковскую Академию Культуры, участник многочисленных проектов в области современного искусства в Украине, Литве, Польше. Художник – постановщик ряда спектаклей. Основатель Лаборатории Ненаправленных Действий. Автор лекций об искусстве в различных образовательных проектах.</p>
@@ -177,201 +174,203 @@
 
     <div class="section" data-anchor="section4">
         <div class="container">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
 
-                <div id="playerGal1"></div>
-                <hr>
-                <div id="playerGal2"></div>
-                <hr>
+                  <div id="playerGal1"></div>
+                  <hr>
+                  <div id="playerGal2"></div>
+                  <hr>
 
-                <div class="fotorama" data-width="100%" data-ratio="800/500">
+                  <div class="fotorama" data-width="100%" data-ratio="800/500">
 
-                    <h4>ЖИВЫЕ И МЁРТВЫЕ</h4>
-                    <p class="text-center">
-                      <img src="img/v2/image1.jpg">
-                    </p>
-                    <p class="text-center">
-                      <img src="img/v2/image2.jpg">
-                    </p>
-                    <p>Инсталляция. Материалы: дерево, металл, фольга.</p>
-                    <p>Работа представляет собой имитацию популярного живого аттракциона, в котором зрители могут проследить жизненный цикл тропических бабочек. Посреди большого города, в огромном торговом центре, в маленьком душном помещении бабочки рождаются, живут и умирают под ногами у зрителей. На выходе из помещения посетители могут купить мёртвую бабочку в застеклённой коробке. Бабочки после смерти выглядят так же, как при жизни. У них нет выхода из этой ситуации, и нет сознания, чтобы понять это. Отличие от человеческой жизни здесь только в том, что мёртвое человеческое тело выглядит не так презентабельно. Наверное, из него уходит то, чего бабочки лишены.</p>
-                    <p>Работа экспонировалась в двухкомнатном полутёмном пространстве и состояла из трёх частей: коконы, подвешенные к потолку колыбели-гробы с большими бабочками и две доски с коллекцией маленьких бабочек, прибитых гвоздями.</p>
-                    <hr>
+                      <h4>ЖИВЫЕ И МЁРТВЫЕ</h4>
+                      <p class="text-center">
+                        <img src="img/v2/image1.jpg">
+                      </p>
+                      <p class="text-center">
+                        <img src="img/v2/image2.jpg">
+                      </p>
+                      <p>Инсталляция. Материалы: дерево, металл, фольга.</p>
+                      <p>Работа представляет собой имитацию популярного живого аттракциона, в котором зрители могут проследить жизненный цикл тропических бабочек. Посреди большого города, в огромном торговом центре, в маленьком душном помещении бабочки рождаются, живут и умирают под ногами у зрителей. На выходе из помещения посетители могут купить мёртвую бабочку в застеклённой коробке. Бабочки после смерти выглядят так же, как при жизни. У них нет выхода из этой ситуации, и нет сознания, чтобы понять это. Отличие от человеческой жизни здесь только в том, что мёртвое человеческое тело выглядит не так презентабельно. Наверное, из него уходит то, чего бабочки лишены.</p>
+                      <p>Работа экспонировалась в двухкомнатном полутёмном пространстве и состояла из трёх частей: коконы, подвешенные к потолку колыбели-гробы с большими бабочками и две доски с коллекцией маленьких бабочек, прибитых гвоздями.</p>
+                      <hr>
 
-                    <h4>ФАНТОМНЫЙ КЛЕЩ</h4>
-                    <p class="text-center">
-                      <img src="img/v2/image3.jpg">
-                    </p>
-                    <p>Инсталляция. Материалы: дерево, золотая краска.</p>
-                    <p>Фантомный клещ – это симптом нервного напряжения в информационном обществе, при котором возникает зуд на поверхности кожи. Человеку, поражённому этим симптомом, кажется, что по его телу ползают насекомые, которых на самом деле нет. В итоге возникает неконтролируемое нервное почёсывание, усиливающееся и доводящее человека до причинения вреда своему телу. Таким образом, иллюзорный раздражитель приводит к вполне реальной угрозе для здоровья. Единственный эффективный способ борьбы с этим симптомом – это специальные чесалки – предметы, цель которых отбить желание чесаться, тем самым лишив Фантомного клеща возможности паразитировать на нашей психосоматической беззащитности.</p>
-                    <hr>
+                      <h4>ФАНТОМНЫЙ КЛЕЩ</h4>
+                      <p class="text-center">
+                        <img src="img/v2/image3.jpg">
+                      </p>
+                      <p>Инсталляция. Материалы: дерево, золотая краска.</p>
+                      <p>Фантомный клещ – это симптом нервного напряжения в информационном обществе, при котором возникает зуд на поверхности кожи. Человеку, поражённому этим симптомом, кажется, что по его телу ползают насекомые, которых на самом деле нет. В итоге возникает неконтролируемое нервное почёсывание, усиливающееся и доводящее человека до причинения вреда своему телу. Таким образом, иллюзорный раздражитель приводит к вполне реальной угрозе для здоровья. Единственный эффективный способ борьбы с этим симптомом – это специальные чесалки – предметы, цель которых отбить желание чесаться, тем самым лишив Фантомного клеща возможности паразитировать на нашей психосоматической беззащитности.</p>
+                      <hr>
 
-                    <h4>DRESS-CONTROL</h4>
-                    <p class="text-center">
-                      <img src="img/v2/image4.jpg">
-                    </p>
-                    <p>Инсталляция. Материалы: дерево, металл.</p>
-                    <p>Работа на стыке Fashion и Art представляет собой иронию по поводу костюма, как
-                    символа защиты национальной идентичности. В основу инсталляции был положен
-                    принцип paper-dolls – бумажной игрушки из детских журналов в виде куклы и
-                    костюмов для неё. Бумажные загибы позволяют менять кукольные костюмы в
-                    зависимости от ситуации (спорт, бал, отдых, война). Среди элементов костюма
-                    располагается человеческая фигура с аналогичными загибами – костюм человека,
-                    как один из вариантов облачения.</p>
-                    <p>Разоблачение – это процесс снятия защитных слоёв. Одежда-забор, сшитая
-                    железными скобами, снята с человека, который тоже был на что-то одет. Что
-                    остаётся, когда все ложные оболочки сняты? И можно ли увидеть основу, которая
-                    скрывалась внутри?</p>
-                    <hr>
+                      <h4>DRESS-CONTROL</h4>
+                      <p class="text-center">
+                        <img src="img/v2/image4.jpg">
+                      </p>
+                      <p>Инсталляция. Материалы: дерево, металл.</p>
+                      <p>Работа на стыке Fashion и Art представляет собой иронию по поводу костюма, как
+                      символа защиты национальной идентичности. В основу инсталляции был положен
+                      принцип paper-dolls – бумажной игрушки из детских журналов в виде куклы и
+                      костюмов для неё. Бумажные загибы позволяют менять кукольные костюмы в
+                      зависимости от ситуации (спорт, бал, отдых, война). Среди элементов костюма
+                      располагается человеческая фигура с аналогичными загибами – костюм человека,
+                      как один из вариантов облачения.</p>
+                      <p>Разоблачение – это процесс снятия защитных слоёв. Одежда-забор, сшитая
+                      железными скобами, снята с человека, который тоже был на что-то одет. Что
+                      остаётся, когда все ложные оболочки сняты? И можно ли увидеть основу, которая
+                      скрывалась внутри?</p>
+                      <hr>
 
 
-                    <h4>ENIGMA (ЗАГАДКА)</h4>
-                    <p class="text-center">
-                      <img src="img/v2/image5.jpg">
-                    </p>
-                    <p class="text-center">
-                      <img src="img/v2/image6.jpg">
-                    </p>
-                    <p>Интерактивная медиа-инсталляция. Сделана в соавторстве с Никола Лекка, Анаи
-                    Майер, Себастьяном Вехером в рамках украинско-австрийской резиденции (проект
-                    «Sex-Dialoges»)</p>
-                    <p>Материалы: дерево, металл, скотч на алюминиевой основе, пенопласт, глина.</p>
-                    <p>Работа структурно разделена на два мира: мужской и женский. Первый уровень
-                    восприятия – это пульт управления, где рычаги обозначены фаллическими
-                    символами разного размера. Пульт связан с дальним планом инсталляции – двумя
-                    симметричными экранами, на которых мы видим движение деревьев за окном
-                    поезда. При движении рычагов на экранах возникают различные ценности
-                    мужского мира (дорогие машины, дворцы, война), эти кадры наслаиваются на
-                    деревья и мешают их видеть. Пульт – это соревнование, принцип «у кого больше»,
-                    иллюзия контроля и власти. Чтобы освободиться от навязчивых иллюзий, мы
-                    обходим пульт, садимся у ног Сфинкса и слушаем Загадку. Датчик присутствия
-                    реагирует на неподвижного человека, слушающего загадку, экраны за спиной
-                    Сфинкса медленно закрываются, в ушах звучит писк, забивающий остальные звуки.
-                    Когда экраны-глаза закрываются полностью, вспыхивает прожектор, и экраны
-                    открываются снова, но уже ослепительно белые. Это путешествие в хтонический
-                    мир Великой матери и одновременно сон в поезде.</p>
-                    <hr>
+                      <h4>ENIGMA (ЗАГАДКА)</h4>
+                      <p class="text-center">
+                        <img src="img/v2/image5.jpg">
+                      </p>
+                      <p class="text-center">
+                        <img src="img/v2/image6.jpg">
+                      </p>
+                      <p>Интерактивная медиа-инсталляция. Сделана в соавторстве с Никола Лекка, Анаи
+                      Майер, Себастьяном Вехером в рамках украинско-австрийской резиденции (проект
+                      «Sex-Dialoges»)</p>
+                      <p>Материалы: дерево, металл, скотч на алюминиевой основе, пенопласт, глина.</p>
+                      <p>Работа структурно разделена на два мира: мужской и женский. Первый уровень
+                      восприятия – это пульт управления, где рычаги обозначены фаллическими
+                      символами разного размера. Пульт связан с дальним планом инсталляции – двумя
+                      симметричными экранами, на которых мы видим движение деревьев за окном
+                      поезда. При движении рычагов на экранах возникают различные ценности
+                      мужского мира (дорогие машины, дворцы, война), эти кадры наслаиваются на
+                      деревья и мешают их видеть. Пульт – это соревнование, принцип «у кого больше»,
+                      иллюзия контроля и власти. Чтобы освободиться от навязчивых иллюзий, мы
+                      обходим пульт, садимся у ног Сфинкса и слушаем Загадку. Датчик присутствия
+                      реагирует на неподвижного человека, слушающего загадку, экраны за спиной
+                      Сфинкса медленно закрываются, в ушах звучит писк, забивающий остальные звуки.
+                      Когда экраны-глаза закрываются полностью, вспыхивает прожектор, и экраны
+                      открываются снова, но уже ослепительно белые. Это путешествие в хтонический
+                      мир Великой матери и одновременно сон в поезде.</p>
+                      <hr>
 
-                    <h4>АКТИВНАЯ ПРЕДМЕТНАЯ СРЕДА</h4>
-                    <p class="text-center">
-                      <img src="img/v2/image7.jpg">
-                    </p>
-                    <p>Инсталляция, перформанс.</p>
-                    <p>Материалы: дерево, металл, верёвка, мел, глина, бумага, тушь, вода, воск.</p>
-                    <p>Активная предметная среда – это условное название проекта, который начался в
-                    2014 и продолжает развиваться по сей день, обрастая новыми объектами и новыми
-                    действиями. Как инсталляция – это абсурдная мастерская, в которой инструменты
-                    из предметов превращаются в сакральные объекты, назначение которых
-                    раскрывается в действиях художника. Действия художника строятся как ритуал,
-                    структура которого зависит от ситуации, набора объектов, настроения художника и
-                    т.д.</p>
-                    <p>Создание объектов – это попытка найти границу предметности, преодолеть её и
-                    трансформировать утилитарную фукцию объекта в магическую. Каждый показ
-                    перформанса – это борьба с вещью, осознание бессмысленности манипуляций с
-                    предметами. А главное – это погружение художника в среду, наполнение которой
-                    не подчиняется логике окружающей реальности.</p>
-                    <hr>
+                      <h4>АКТИВНАЯ ПРЕДМЕТНАЯ СРЕДА</h4>
+                      <p class="text-center">
+                        <img src="img/v2/image7.jpg">
+                      </p>
+                      <p>Инсталляция, перформанс.</p>
+                      <p>Материалы: дерево, металл, верёвка, мел, глина, бумага, тушь, вода, воск.</p>
+                      <p>Активная предметная среда – это условное название проекта, который начался в
+                      2014 и продолжает развиваться по сей день, обрастая новыми объектами и новыми
+                      действиями. Как инсталляция – это абсурдная мастерская, в которой инструменты
+                      из предметов превращаются в сакральные объекты, назначение которых
+                      раскрывается в действиях художника. Действия художника строятся как ритуал,
+                      структура которого зависит от ситуации, набора объектов, настроения художника и
+                      т.д.</p>
+                      <p>Создание объектов – это попытка найти границу предметности, преодолеть её и
+                      трансформировать утилитарную фукцию объекта в магическую. Каждый показ
+                      перформанса – это борьба с вещью, осознание бессмысленности манипуляций с
+                      предметами. А главное – это погружение художника в среду, наполнение которой
+                      не подчиняется логике окружающей реальности.</p>
+                      <hr>
 
-                    <h4>ГЗА-УНДА-ДЗАЛА</h4>
-                    <p class="text-center">
-                      <img src="img/v2/image8.jpg">
-                    </p>
-                    <p class="text-center">
-                      <img src="img/v2/image9.jpg">
-                    </p>
+                      <h4>ГЗА-УНДА-ДЗАЛА</h4>
+                      <p class="text-center">
+                        <img src="img/v2/image8.jpg">
+                      </p>
+                      <p class="text-center">
+                        <img src="img/v2/image9.jpg">
+                      </p>
 
-                    <p>Перформанс.
-                    Состав участников: Константин Зоркин,
-                    Сандро Гарибашвили, Юрий Штайда.</p>
+                      <p>Перформанс.
+                      Состав участников: Константин Зоркин,
+                      Сандро Гарибашвили, Юрий Штайда.</p>
 
-                    <p>Это первая работа, сделанная коллективно «Лабораторией ненаправленных
-                    действий», группой художников-перформеров, работающих с объектами, звуком и
-                    телом. Название переводится с грузинского, как «Путь к силе», а действие
-                    строится на ощущении от древнего текста «Эпоса о Гильгамеше». В этом
-                    перформансе художники действуют как шаманы и как воины, идущие в путь за
-                    силой. После первого показа был сформулирован концепт «урбанистического
-                    шаманизма», состояния, в котором человек ищет маргинальные, дикие зоны в
-                    городской среде и использует их как разломы в ткани цивилизации, подпитываясь
-                    исходящей оттуда тектонической энергией древних миров. Перформанс имеет
-                    свою особую предметную среду, каждый элемент которой наполнен силой,
-                    необходимой воину в пути.</p>
-                    <hr>
+                      <p>Это первая работа, сделанная коллективно «Лабораторией ненаправленных
+                      действий», группой художников-перформеров, работающих с объектами, звуком и
+                      телом. Название переводится с грузинского, как «Путь к силе», а действие
+                      строится на ощущении от древнего текста «Эпоса о Гильгамеше». В этом
+                      перформансе художники действуют как шаманы и как воины, идущие в путь за
+                      силой. После первого показа был сформулирован концепт «урбанистического
+                      шаманизма», состояния, в котором человек ищет маргинальные, дикие зоны в
+                      городской среде и использует их как разломы в ткани цивилизации, подпитываясь
+                      исходящей оттуда тектонической энергией древних миров. Перформанс имеет
+                      свою особую предметную среду, каждый элемент которой наполнен силой,
+                      необходимой воину в пути.</p>
+                      <hr>
 
-                    <h4>СУМЕРКИ</h4>
-                    <p class="text-center">
-                      <img src="img/v2/image10.jpg">
-                    </p>
-                    <p class="text-center">
-                      <img src="img/v2/image11.jpg">
-                    </p>
-                    <p>Перформанс. Материалы: Полиэтиленовые мешки для мусора, дерево, воздух.</p>
-                    <p>Участники: Константин Зоркин, Юрий Штайда.</p>
-                    <p>Работа принимала участие в акции Ночь музеев в Харькове в 2016г. Длительность
-                    перформанса была связана с временем суток. Художники в течение 40 минут
-                    ловили воздух мешками для мусора, собирая их в чёрную гору посреди открытой
-                    площадки. К этому моменту на улице стемнело, и возникло ощущение, что темнота
-                    сгустилась в центре созданной чёрной массы. Когда гора была построена,
-                    художники, одев специальные приспособления на руки и на ноги, разрушили
-                    получившуюся конструкцию. К.Зоркин прокалывал мешки, а Ю.Штайда давил их. В
-                    результате все обрывки черного полиэтилена были собраны в один мешок, и
-                    ситуация свернулась в исходную точку.</p>
-                    <hr>
+                      <h4>СУМЕРКИ</h4>
+                      <p class="text-center">
+                        <img src="img/v2/image10.jpg">
+                      </p>
+                      <p class="text-center">
+                        <img src="img/v2/image11.jpg">
+                      </p>
+                      <p>Перформанс. Материалы: Полиэтиленовые мешки для мусора, дерево, воздух.</p>
+                      <p>Участники: Константин Зоркин, Юрий Штайда.</p>
+                      <p>Работа принимала участие в акции Ночь музеев в Харькове в 2016г. Длительность
+                      перформанса была связана с временем суток. Художники в течение 40 минут
+                      ловили воздух мешками для мусора, собирая их в чёрную гору посреди открытой
+                      площадки. К этому моменту на улице стемнело, и возникло ощущение, что темнота
+                      сгустилась в центре созданной чёрной массы. Когда гора была построена,
+                      художники, одев специальные приспособления на руки и на ноги, разрушили
+                      получившуюся конструкцию. К.Зоркин прокалывал мешки, а Ю.Штайда давил их. В
+                      результате все обрывки черного полиэтилена были собраны в один мешок, и
+                      ситуация свернулась в исходную точку.</p>
+                      <hr>
 
-                    <h4>ПЕЙЗАЖ No 1</h4>
-                    <p class="text-center">
-                      <img src="img/v2/image12.jpg">
-                    </p>
-                    <p>Лэнд-арт. Работа сделана в рамках проекта «ЕХ-пленэр» (арт-резиденция
-                    Барановка, Полтавская область). Материалы: дерево, трава, мох, гвозди.</p>
-                    <p>Работы, созданные художником в Барановке, были нацелены на поиск
-                    альтернативных видов пленэра. Поэтому форма работы отсылает к этюду, стоящему
-                    на мольберте, но сама работа сделана из досок, найденных под ногами, в которых
-                    угадываются ритмы местного пейзажа. Пейзаж No 1 был выставлен так, чтобы через
-                    незаполненные фрагменты можно было видеть пейзаж-прототип и постоянно
-                    меняющееся небо.</p>
-                    <hr>
+                      <h4>ПЕЙЗАЖ No 1</h4>
+                      <p class="text-center">
+                        <img src="img/v2/image12.jpg">
+                      </p>
+                      <p>Лэнд-арт. Работа сделана в рамках проекта «ЕХ-пленэр» (арт-резиденция
+                      Барановка, Полтавская область). Материалы: дерево, трава, мох, гвозди.</p>
+                      <p>Работы, созданные художником в Барановке, были нацелены на поиск
+                      альтернативных видов пленэра. Поэтому форма работы отсылает к этюду, стоящему
+                      на мольберте, но сама работа сделана из досок, найденных под ногами, в которых
+                      угадываются ритмы местного пейзажа. Пейзаж No 1 был выставлен так, чтобы через
+                      незаполненные фрагменты можно было видеть пейзаж-прототип и постоянно
+                      меняющееся небо.</p>
+                      <hr>
 
-                    <h4>ВОЗВРАЩЕНИЕ</h4>
-                    <p class="text-center">
-                      <img src="img/v2/image13.jpg">
-                    </p>
-                    <p>Перформанс. Материалы: дерево, ветки, верёвка, трава, глина.</p>
-                    <p>Эта работа – размышление на тему камуфляжа и способов маскировки. Желание
-                    слиться с природой может приобретать разные формы. Если подойти к этому
-                    вопросу со стороны fasion-идеологии, то слияние будет равносильно одеванию.
-                    Древние люди ели мир вокруг себя, перерабатывали его и одевались в него. Ткань,
-                    кожа, мех и шерсть были частью мира и становились частями одежды. В
-                    перформансе «Возвращение» была сделана попытка одеться в поле, лес и землю.
-                    Деревья и трава монтировались на специальные атрибуты, после чего художник
-                    проверил возможности своего камуфляжного костюма, перешёл в горизонтальное
-                    положение и ползком исчез в зарослях, на некоторое время став их частью.</p>
-                    <hr>
+                      <h4>ВОЗВРАЩЕНИЕ</h4>
+                      <p class="text-center">
+                        <img src="img/v2/image13.jpg">
+                      </p>
+                      <p>Перформанс. Материалы: дерево, ветки, верёвка, трава, глина.</p>
+                      <p>Эта работа – размышление на тему камуфляжа и способов маскировки. Желание
+                      слиться с природой может приобретать разные формы. Если подойти к этому
+                      вопросу со стороны fasion-идеологии, то слияние будет равносильно одеванию.
+                      Древние люди ели мир вокруг себя, перерабатывали его и одевались в него. Ткань,
+                      кожа, мех и шерсть были частью мира и становились частями одежды. В
+                      перформансе «Возвращение» была сделана попытка одеться в поле, лес и землю.
+                      Деревья и трава монтировались на специальные атрибуты, после чего художник
+                      проверил возможности своего камуфляжного костюма, перешёл в горизонтальное
+                      положение и ползком исчез в зарослях, на некоторое время став их частью.</p>
+                      <hr>
 
-                    <h4>GAME-VOMER</h4>
-                    <p class="text-center">
-                      <img src="img/v2/image15.jpg">
-                    </p>
-                    <p class="text-center">
-                      <img src="img/v2/image14.jpg">
-                    </p>
-                    <p>Участники: Константин Зоркин, Сандро Гарибашвили.</p>
-                    <p>Материалы: металл, полиэтилен, дерево, керосин, водяной пистолет, пиво, сушёная рыба.</p>
-                    <p>Эта работа была завершением акции Ночь
-                    перформанса в Харькове . Действие
-                    развивается на фонтане Каскад, многоступенчатой бетонной конструкции, которую
-                    художники использовали, как модель многоуровневой компьютерной игры (типа
-                    Super Mario), где положительный герой, вооружённый водяным пистолетом, на
-                    каждом уровне должен победить “злодея», который стреляет горящими
-                    деревянными рыбами-вомерами (fire-fish). Оба персонажа перебираются всё выше
-                    и выше по ступеням, пока не наступает кульминация: герой и злодей становятся
-                    друзьми и, прорвав экраны виртуальной реальности настоящими рыбами, начинаюткормить друг друга таранкой и поить пивом. Всё это происходит под электронные
-                    сэмплы детского синтезатора.</p>
-                    <hr>
+                      <h4>GAME-VOMER</h4>
+                      <p class="text-center">
+                        <img src="img/v2/image15.jpg">
+                      </p>
+                      <p class="text-center">
+                        <img src="img/v2/image14.jpg">
+                      </p>
+                      <p>Участники: Константин Зоркин, Сандро Гарибашвили.</p>
+                      <p>Материалы: металл, полиэтилен, дерево, керосин, водяной пистолет, пиво, сушёная рыба.</p>
+                      <p>Эта работа была завершением акции Ночь
+                      перформанса в Харькове . Действие
+                      развивается на фонтане Каскад, многоступенчатой бетонной конструкции, которую
+                      художники использовали, как модель многоуровневой компьютерной игры (типа
+                      Super Mario), где положительный герой, вооружённый водяным пистолетом, на
+                      каждом уровне должен победить “злодея», который стреляет горящими
+                      деревянными рыбами-вомерами (fire-fish). Оба персонажа перебираются всё выше
+                      и выше по ступеням, пока не наступает кульминация: герой и злодей становятся
+                      друзьми и, прорвав экраны виртуальной реальности настоящими рыбами, начинаюткормить друг друга таранкой и поить пивом. Всё это происходит под электронные
+                      сэмплы детского синтезатора.</p>
+                      <hr>
 
-                </div>
-            </div>
-            <div class="col-md-1"></div>
+                  </div>
+              </div>
+              <div class="col-md-1"></div>
+          </div>
         </div>
     </div>
 
