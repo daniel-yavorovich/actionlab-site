@@ -90,6 +90,10 @@ body {
     text-decoration: none;
 }
 
-.fotorama img {
+img {
     max-width: 100%;
+}
+
+.section0 h1 {
+    margin-top: 66px;
 }
